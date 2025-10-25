@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { NgClass } from '@angular/common';
 import { MatIcon } from '@angular/material/icon';
 import { SidenavService } from '../../services/sidenav.service';
-import { PlatformMetrics } from '../app.component';
+import { PlatformMetrics } from '../../shared/models';
 
 @Component({
   selector: 'app-bottom-navigation',

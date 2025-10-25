@@ -10,7 +10,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatChipsModule } from '@angular/material/chips';
 import { FormsModule, ReactiveFormsModule, FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
-import { McpPrompt, PromptArgument, PlatformMetrics } from '../app/app.component';
+import { McpPrompt, PromptArgument, PlatformMetrics } from '../shared/models';
 
 export interface PromptSelectionDialogData {
   metrics: PlatformMetrics;

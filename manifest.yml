@@ -1,6 +1,6 @@
 ---
 applications:
-  - name: ai-tool-chat
+  - name: doit-ai-intranet
     buildpacks:
       - java_buildpack_offline
     memory: 1G

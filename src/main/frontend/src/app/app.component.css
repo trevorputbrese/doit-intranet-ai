@@ -1,8 +1,9 @@
-/* App container */
-.app-container {
+/* Dept frame container */
+.dept-frame {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: var(--md-sys-color-surface);
 }
 
 /* Header CSS */
@@ -11,10 +12,10 @@ header[role="banner"] {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 1000;
 }
 
-mat-toolbar {
+.dept-toolbar {
   height: var(--md-spacing-16); /* 64px using Material Design spacing */
   background: linear-gradient(135deg,
     var(--md-sys-color-surface-container-high) 0%,
@@ -24,7 +25,7 @@ mat-toolbar {
   border-bottom: 1px solid var(--md-sys-color-outline-variant);
 }
 
-.app-title {
+.dept-title {
   color: var(--md-sys-color-on-surface);
   font-weight: 500;
   margin: 0;
@@ -32,50 +33,31 @@ mat-toolbar {
   line-height: var(--md-sys-typescale-title-large-line-height);
 }
 
-/* Side panels as complementary content */
-aside[role="complementary"] {
-  /* This wrapper contains all panel components which handle their own positioning */
-}
-
-/* Main content wrapper using responsive system */
-main[role="main"] {
-  height: 100vh;
-  box-sizing: border-box;
+/* Router outlet content */
+.router-content {
+  margin-top: var(--md-spacing-16); /* Account for fixed header */
+  flex: 1;
+  overflow-y: auto;
   background-color: var(--md-sys-color-surface);
 }
 
-/* Memory panel component */
-app-memory-panel {
-  /* This component handles its own positioning */
-  position: static;
-  z-index: 10;
-}
-
-/* Responsive layout using adaptive tokens */
+/* Responsive adjustments */
 @media (max-width: 599px) {
-  /* Compact layout - mobile */
-  main[role="main"] {
-    padding-top: var(--md-toolbar-height);
-    padding-bottom: var(--md-bottom-nav-height);
-    padding-left: var(--md-content-margin);
-    padding-right: var(--md-content-margin);
+  .dept-toolbar {
+    height: var(--md-toolbar-height);
   }
 
-  mat-toolbar {
-    height: var(--md-toolbar-height);
+  .router-content {
+    margin-top: var(--md-toolbar-height);
   }
 }
 
 @media (min-width: 600px) {
-  /* Medium layout and up - tablet/desktop */
-  main[role="main"] {
-    padding-top: var(--md-toolbar-height);
-    padding-right: calc(var(--md-nav-rail-width) + var(--md-content-margin));
-    padding-left: var(--md-content-margin);
-    padding-bottom: var(--md-content-margin);
+  .dept-toolbar {
+    height: var(--md-toolbar-height);
   }
 
-  mat-toolbar {
-    height: var(--md-toolbar-height);
+  .router-content {
+    margin-top: var(--md-toolbar-height);
   }
 }

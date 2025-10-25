@@ -1,0 +1,51 @@
+<div class="landing-container">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">Welcome to Dept of IT</h1>
+      <p class="hero-subtitle">Your gateway to agency resources and services</p>
+    </div>
+  </section>
+
+  <!-- AI Chat Assistant Highlight -->
+  <section class="chat-highlight-section">
+    <mat-card class="chat-highlight-card">
+      <mat-card-header>
+        <mat-icon class="chat-icon">smart_toy</mat-icon>
+        <mat-card-title>AI Chat Assistant</mat-card-title>
+        <mat-card-subtitle>Get instant help with documents, policies, and more</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Our intelligent chat assistant can help you find information, analyze documents, and answer questions about agency policies and procedures.</p>
+        <button mat-flat-button color="primary" class="chat-button" (click)="navigateToChat()">
+          <mat-icon>chat</mat-icon>
+          Launch Chat Assistant
+        </button>
+      </mat-card-content>
+    </mat-card>
+  </section>
+
+  <!-- Agency Links Grid -->
+  <section class="links-section">
+    <h2 class="section-title">Agency Resources</h2>
+    <div class="links-grid">
+      @for (link of agencyLinks; track link.title) {
+        <mat-card class="link-card">
+          <mat-card-header>
+            <mat-icon class="link-icon">{{ link.icon }}</mat-icon>
+            <mat-card-title>{{ link.title }}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>{{ link.description }}</p>
+            <a [href]="link.url" mat-button color="primary">Access <mat-icon>arrow_forward</mat-icon></a>
+          </mat-card-content>
+        </mat-card>
+      }
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="landing-footer">
+    <p>&copy; 2024 Department of IT. All rights reserved.</p>
+  </footer>
+</div>

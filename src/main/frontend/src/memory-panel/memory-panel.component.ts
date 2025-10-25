@@ -8,7 +8,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatTooltipModule} from "@angular/material/tooltip";
 import {MatChipsModule} from '@angular/material/chips';
-import {PlatformMetrics} from '../app/app.component';
+import {PlatformMetrics} from '../shared/models';
 import {SidenavService} from '../services/sidenav.service';
 
 @Component({

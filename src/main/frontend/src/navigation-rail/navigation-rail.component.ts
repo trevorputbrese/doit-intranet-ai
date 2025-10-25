@@ -3,7 +3,7 @@ import { NgClass } from '@angular/common';
 import { MatIcon } from '@angular/material/icon';
 import { MatTooltip } from '@angular/material/tooltip';
 import { SidenavService } from '../services/sidenav.service';
-import { PlatformMetrics } from '../app/app.component';
+import { PlatformMetrics } from '../shared/models';
 
 @Component({
   selector: 'app-navigation-rail',

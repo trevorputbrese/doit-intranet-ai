@@ -10,7 +10,7 @@ import { FileSizePipe } from '../pipes/file-size.pipe';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatChipsModule } from '@angular/material/chips';
-import { PlatformMetrics } from '../app/app.component';
+import { PlatformMetrics } from '../shared/models';
 import { SidenavService } from '../services/sidenav.service';
 import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
 import { Injectable } from '@angular/core';

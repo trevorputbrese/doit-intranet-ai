@@ -25,7 +25,7 @@ import {MatCard, MatCardContent} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDialog} from '@angular/material/dialog';
 import {MarkdownComponent} from 'ngx-markdown';
-import {PlatformMetrics} from '../app/app.component';
+import {PlatformMetrics} from '../shared/models';
 import {
   PromptSelectionDialogComponent,
   PromptSelectionResult

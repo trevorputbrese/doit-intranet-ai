@@ -8,7 +8,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatCardModule } from '@angular/material/card';
-import { PlatformMetrics, McpServer } from '../app/app.component';
+import { PlatformMetrics, McpServer } from '../shared/models';
 import { SidenavService } from '../services/sidenav.service';
 import { ToolsModalComponent } from '../tools-modal/tools-modal.component';
 

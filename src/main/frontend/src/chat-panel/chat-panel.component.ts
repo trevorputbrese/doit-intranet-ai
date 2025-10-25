@@ -5,7 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatChipsModule } from '@angular/material/chips';
-import { PlatformMetrics } from '../app/app.component';
+import { PlatformMetrics } from '../shared/models';
 import { SidenavService } from '../services/sidenav.service';
 
 @Component({
