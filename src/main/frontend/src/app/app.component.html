@@ -1,8 +1,13 @@
 <div class="dept-frame" role="application" aria-label="Department of IT Intranet">
   <header role="banner">
     <mat-toolbar class="dept-toolbar">
+      <img src="assets/doit-seal-transparent.png" alt="US Department of IT Seal" class="dept-seal">
       <h1 class="dept-title">{{ title }}</h1>
       <span style="flex:1 1 auto"></span>
+      <nav class="header-nav">
+        <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        <a routerLink="/chat" class="nav-link" routerLinkActive="active">Chat</a>
+      </nav>
     </mat-toolbar>
   </header>
 
