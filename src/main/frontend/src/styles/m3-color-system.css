@@ -13,23 +13,23 @@
  */
 
 :root {
-  /* ===== PRIMARY COLOR ROLES ===== */
-  --md-sys-color-primary: #3c6840;
+  /* ===== PRIMARY COLOR ROLES (DHS Blue) ===== */
+  --md-sys-color-primary: #005288;
   --md-sys-color-on-primary: #ffffff;
-  --md-sys-color-primary-container: #bdefbc;
-  --md-sys-color-on-primary-container: #002108;
+  --md-sys-color-primary-container: #e8f2f8;
+  --md-sys-color-on-primary-container: #003d5c;
 
-  /* ===== SECONDARY COLOR ROLES ===== */
-  --md-sys-color-secondary: #516350;
+  /* ===== SECONDARY COLOR ROLES (DHS Red) ===== */
+  --md-sys-color-secondary: #c41230;
   --md-sys-color-on-secondary: #ffffff;
-  --md-sys-color-secondary-container: #d3e8d0;
-  --md-sys-color-on-secondary-container: #0f1f10;
+  --md-sys-color-secondary-container: #ffd9dc;
+  --md-sys-color-on-secondary-container: #3d0007;
 
-  /* ===== TERTIARY COLOR ROLES ===== */
-  --md-sys-color-tertiary: #196778;
+  /* ===== TERTIARY COLOR ROLES (Neutral Blue-Gray) ===== */
+  --md-sys-color-tertiary: #4a5f7a;
   --md-sys-color-on-tertiary: #ffffff;
-  --md-sys-color-tertiary-container: #aeecff;
-  --md-sys-color-on-tertiary-container: #001f26;
+  --md-sys-color-tertiary-container: #d3e1f3;
+  --md-sys-color-on-tertiary-container: #061e35;
 
   /* ===== ERROR COLOR ROLES ===== */
   --md-sys-color-error: #ba1a1a;
@@ -44,27 +44,27 @@
   --md-sys-color-scrim: #000000;
 
   /* ===== SURFACE COLOR ROLES ===== */
-  --md-sys-color-surface: #fcfdf7;
-  --md-sys-color-on-surface: #1a1c19;
-  --md-sys-color-surface-variant: #dde5d9;
-  --md-sys-color-on-surface-variant: #424940;
+  --md-sys-color-surface: #ffffff;
+  --md-sys-color-on-surface: #1a1c1e;
+  --md-sys-color-surface-variant: #e1e8f0;
+  --md-sys-color-on-surface-variant: #42474e;
 
   /* ===== SURFACE TINT SYSTEM ===== */
   --md-sys-color-surface-tint: var(--md-sys-color-primary);
-  
+
   /* Surface containers with proper tint mixing */
-  --md-sys-color-surface-dim: #ddddd8;
-  --md-sys-color-surface-bright: #fcfdf7;
+  --md-sys-color-surface-dim: #dde3ea;
+  --md-sys-color-surface-bright: #ffffff;
   --md-sys-color-surface-container-lowest: #ffffff;
-  --md-sys-color-surface-container-low: #f6f7f1;
-  --md-sys-color-surface-container: #f0f1eb;
-  --md-sys-color-surface-container-high: #eaeae5;
-  --md-sys-color-surface-container-highest: #e4e5df;
+  --md-sys-color-surface-container-low: #f6f8fb;
+  --md-sys-color-surface-container: #f0f3f7;
+  --md-sys-color-surface-container-high: #eaeef3;
+  --md-sys-color-surface-container-highest: #e4e9ee;
 
   /* ===== INVERSE COLOR ROLES ===== */
-  --md-sys-color-inverse-surface: #2e312d;
-  --md-sys-color-inverse-on-surface: #f0f1eb;
-  --md-sys-color-inverse-primary: #a1d3a2;
+  --md-sys-color-inverse-surface: #2f3033;
+  --md-sys-color-inverse-on-surface: #f1f3f6;
+  --md-sys-color-inverse-primary: #92c9ff;
 
   /* ===== SEMANTIC COLOR TOKENS ===== */
   /* Success colors - using primary green tones */
@@ -123,16 +123,16 @@
 
   /* ===== RGB VALUES FOR RGBA USAGE ===== */
   /* Primary colors */
-  --md-sys-color-primary-rgb: 60, 104, 64;
+  --md-sys-color-primary-rgb: 0, 82, 136;
   --md-sys-color-on-primary-rgb: 255, 255, 255;
-  --md-sys-color-primary-container-rgb: 189, 239, 188;
-  --md-sys-color-on-primary-container-rgb: 0, 33, 8;
+  --md-sys-color-primary-container-rgb: 200, 225, 245;
+  --md-sys-color-on-primary-container-rgb: 0, 29, 51;
 
   /* Secondary colors */
-  --md-sys-color-secondary-rgb: 81, 99, 80;
+  --md-sys-color-secondary-rgb: 196, 18, 48;
   --md-sys-color-on-secondary-rgb: 255, 255, 255;
-  --md-sys-color-secondary-container-rgb: 211, 232, 208;
-  --md-sys-color-on-secondary-container-rgb: 15, 31, 16;
+  --md-sys-color-secondary-container-rgb: 255, 217, 220;
+  --md-sys-color-on-secondary-container-rgb: 61, 0, 7;
 
   /* Tertiary colors */
   --md-sys-color-tertiary-rgb: 25, 103, 120;
